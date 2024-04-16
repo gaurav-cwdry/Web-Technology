@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Change Background Color and Text</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f0f0;
+}
+h1 {
+color: #333;
+}
+#changeButton {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<h1 id="heading">Original Heading</h1>
+<button id="changeButton">Change Background Color and
+Text</button>
+
+<script>
+function changeStyle() {
+var body = document.body;
+var heading = document.getElementById('heading');
+var button = document.getElementById('changeButton');
+var randomColor = '#' +
+Math.floor(Math.random()*16777215).toString(16);
+body.style.backgroundColor = randomColor;
+heading.textContent = "New Heading";
+button.textContent = "Background Color Changed!";
+}
+document.getElementById('changeButton').addEventListener('clic
+k', changeStyle);
+</script>
+</body>
+</html>
