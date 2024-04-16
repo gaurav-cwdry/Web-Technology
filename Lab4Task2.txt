@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Change Background Color and Text</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f0f0;
+}
+h1 {
+color: #333;
+font-size: 24px;
+}
+#changeButton {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1 id="heading">Original Heading</h1>
+<button id="changeButton">Change Background Color and
+Text</button>
+<button id="newButton">Click Me</button>
+
+<script>
+
+function changeStyle() {
+var body = document.body;
+var heading = document.getElementById('heading');
+var button = document.getElementById('changeButton');
+var randomColor = 'lightgreen';
+body.style.backgroundColor = randomColor;
+heading.style.color = 'red';
+heading.textContent = "New Heading";
+button.textContent = "Background Color Changed!";
+}
+document.getElementById('changeButton').addEventListener('clic
+k', changeStyle);
+var newButton = document.createElement('button');
+newButton.textContent = 'Click Me';
+newButton.addEventListener('click', function() {
+alert('You clicked the new button!');
+});
+document.body.appendChild(newButton);
+</script>
+</body>
+</html>
