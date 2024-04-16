@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scroll</title>
+<style>
+/* Style for the links */
+a {
+    display: block;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<a href="#bottom">Jump to Bottom</a>
+<div style="height: 1000px;"></div>
+<a id="bottom"></a>
+
+<a href="#top">Back to Top</a>
+
+<script>
+// Smooth scrolling function
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
