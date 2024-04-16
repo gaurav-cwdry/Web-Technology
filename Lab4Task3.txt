@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Change Background Color and Text</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+}
+.light-green-background {
+
+background-color: lightgreen;
+}
+h1 {
+color: #333;
+font-size: 24px; /* Default font-size */
+}
+#changeButton {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1 id="heading">Original Heading</h1>
+<button id="changeButton">Change Background Color and
+Text</button>
+
+<script>
+// Alert before assigning class attribute
+alert('Before assigning class attribute: ' +
+document.body.className);
+function changeStyle() {
+var body = document.body;
+var heading = document.getElementById('heading');
+var button = document.getElementById('changeButton');
+
+body.className = 'light-green-background'; // Set
+background color with class attribute
+heading.style.color = 'red'; // Make the text red
+heading.textContent = "New Heading"; // Change text inside
+<h1> tag
+button.textContent = "Background Color Changed!";
+}
+
+document.getElementById('changeButton').addEventListener('clic
+k', changeStyle);
+// Alert after assigning class attribute
+alert('After assigning class attribute: ' +
+document.body.className);
+</script>
+
+</body>
+</html>
