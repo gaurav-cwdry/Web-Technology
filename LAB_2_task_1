@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: #333;
+}
+p {
+    line-height: 1.6;
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<section>
+<h1>About Me</h1>
+<p>
+Hello, I'm GOURAB CHOWDHURY, My roll num is 22cs3069
+</p>
+</section>
+<section>
+
+<h4>Education</h4>
+<p>
+I am doing B.Tech in CSE from RGIPT
+</p>
+</section>
+<section>
+<h2>Favourite Games</h2>
+<p>
+My Favourite game is Call of Duty
+</p>
+</section>
+
+</body>
+</html>
