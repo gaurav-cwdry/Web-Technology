@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Change h1 Color</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Heading with External CSS</h1>
+</body>
+</html>

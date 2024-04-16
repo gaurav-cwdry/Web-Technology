@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Browser Versions</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.grid-container {
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: repeat(5, 1fr); /* Adjust the number
+based on the number of browsers */
+gap: 10px;
+padding: 20px;
+}
+.grid-item {
+text-align: center;
+}
+.icon {
+width: 60px;
+height: 60px;
+}
+
+.version {
+font-size: 18px;
+margin-top: 5px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #dddddd;
+
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<table>
+<tbody>
+<tr>
+<td><img class="icon" src="chrome.png"
+
+alt="Chrome"></td>
+
+<td><img class="icon" src="firefox.png"
+
+alt="Firefox"></td>
+
+<td><img class="icon" src="edge.jpg" alt="Edge"></td>
+<td><img class="icon" src="safari.jpg"
+
+alt="Safari"></td>
+
+<td><img class="icon" src="opera.png"
+
+alt="Opera"></td>
+</tr>
+<tr>
+<td>Latest Version: 57</td>
+<td>Latest Version: 52</td>
+<td>Latest Version: 16</td>
+<td>Latest Version: 10</td>
+<td>Latest Version: 44</td>
+
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

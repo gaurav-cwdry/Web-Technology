@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Content Replacement</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+
+}
+header {
+background-color: #f6f;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+main {
+padding: 20px;
+}
+.content {
+border: 1px solid #ccc;
+padding: 20px;
+margin-bottom: 20px;
+}
+#content1 {
+background-color: #f9f9f9;
+}
+#content2 {
+background-color: #e6e6e6;
+display: none;
+}
+button {
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<header>
+<h1>Content Replacement Example</h1>
+</header>
+
+<main>
+<div class="content" id="content1">
+<h2>Original Content</h2>
+<p>This is the original content.</p>
+</div>
+
+<div class="content" id="content2">
+<h2>New Content</h2>
+<p>This is the new content with different style.</p>
+</div>
+
+<button id="changeContentBtn">Change Content</button>
+</main>
+
+<script>
+document.getElementById("changeContentBtn").addEventListene
+r("click", function() {
+document.getElementById("content1").style.display = "none";
+document.getElementById("content2").style.display =
+"block";
+});
+</script>
+
+</body>
+</html>
