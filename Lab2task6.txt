@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Favorite Websites</title>
+</head>
+<body>
+<h1>My Favorite Websites</h1>
+<ul>
+<li><a href="https://www.rgipt.ac.in/" target="_blank">RGIPT Website</a></li>
+<li><a href="https://www.google.com/" target="_blank">Google</a></li>
+<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+<li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+</ul>
+</body>
+</html>
