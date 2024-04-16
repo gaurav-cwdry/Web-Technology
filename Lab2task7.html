@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll to Top Example</title>
+<style>
+/* Style for the back-to-top link */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<h1> Content Goes </h1>
+<p>Web Technology can be Classified into the Following Sections:
+World Wide Web (WWW): The World Wide Web is based on several
+different technologies: Web browsers, Hypertext Markup Language (HTML),
+and Hypertext Transfer Protocol (HTTP).
+Web Browser: The web browser is an application software to explore
+www (World Wide Web). It provides an interface between the server and the
+client and requests to the server for web documents and services.
+Web Server: Web server is a program which processes the network
+requests of the users and serves them with files that create web pages.
+This exchange takes place using Hypertext Transfer Protocol (HTTP).</p>
+
+<!-- Back to Top link -->
+<a href="#top" id="back-to-top">Back to Top</a>
+
+<div style="height: 1000px;"></div>
+
+<a id="top"></a>
+
+<script>
+// Function to show or hide the back-to-top link based on scroll position
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+    } else {
+        document.getElementById("back-to-top").style.display = "none";
+    }
+}
+
+// Function to scroll back to the top when the link is clicked
+document.getElementById("back-to-top").addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+</script>
+
+</body>
+</html>
